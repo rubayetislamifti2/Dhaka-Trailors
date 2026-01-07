@@ -8,6 +8,7 @@ import Order from './Order/orderTable'
 import NewOrder from './Order/newOrder'
 import PrintOrder from './Order/printOrder'
 import Menu from './Menu/menu'
+import Profile from './Profile/Profile'
 import './App.css'
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
         <Route path='/order/table' element={<Order/>} />
         <Route path='/order/new' element={<NewOrder/>} />
         <Route path='/order/print' element={<PrintOrder/>} />
-        <Route path='/menu' element={<Menu/>} />
+        <Route path='/dashboard' element={<Menu/>} />
+        <Route path='/profile' element={<Profile/>}></Route>
       </Routes>
     </BrowserRouter>
   )

@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./newOrder.css";
+import Navbar from "../components/Navbar";
 
 function NewOrder() {
   const handlePrint = () => window.print();
 
   return (
+    <>
+    <Navbar />
+    
     <div className="new-order-page">
 
       {/* ===== Header ===== */}
@@ -101,6 +105,7 @@ function NewOrder() {
       </div>
 
     </div>
+    </>
   );
 }
 

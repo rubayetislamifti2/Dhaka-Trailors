@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./orderTable.css";
+import Navbar from "../components/Navbar";
 
 
 function Order() {
@@ -30,6 +31,8 @@ function Order() {
   );
 
   return (
+    <>
+    <Navbar />
     <div className="order-page">
       {/* Header */}
       <div className="order-header-card">
@@ -100,6 +103,7 @@ function Order() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

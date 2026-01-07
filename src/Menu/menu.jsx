@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import "./menu.css";
+import Navbar from "../components/Navbar";
 
 function Dashboard() {
   return (
+    <>
+    <Navbar />
+    
     <div className="dashboard-page">
       <h1 className="page-title">Dashboard</h1>
 
@@ -44,6 +48,7 @@ function Dashboard() {
         </Link>
       </div>
     </div>
+    </>
   );
 }
 
